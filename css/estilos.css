@@ -6,6 +6,16 @@
   --luz: rgb(229, 255, 0);
 }
 
+#mudançaIdioma {
+  color: #000;
+    background-color: var(--vermelha);
+    border-radius: 19px;
+    padding: 30px;
+    position: absolute;
+    top: 35px;
+    left: 45px;
+}
+
 body {
   align-items: center;
   background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
@@ -34,16 +44,16 @@ h1 {
 
 .tecla {
   background-color: var(--branca);
-  border-radius: 30px;
-  box-shadow: 3px 3px 0 var(--cinza);
-  color: var(--vermelha);
-  cursor: pointer;
-  height: 120px;
-  font-size: 1.75em;
-  font-weight: bold;
-  line-height: 120px;
-  text-align: center;
-  width: 120px;
+    border-radius: 30px;
+    box-shadow: 6px 5px 0 var(--cinza);
+    color: var(--vermelha);
+    cursor: pointer;
+    height: 200px;
+    font-size: 1.75em;
+    font-weight: bold;
+    line-height: 120px;
+    text-align: center;
+    width: 250px;
 }
 
 .tecla.ativa,
