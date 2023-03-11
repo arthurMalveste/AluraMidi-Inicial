@@ -4,17 +4,28 @@
   --vermelha-escura: #af303f;
   --branca: #fff;
   --luz: rgb(229, 255, 0);
+  --laranja: #FF8C00;
 }
 
 #mudançaIdioma {
   color: #000;
-    background-color: var(--vermelha);
-    border-radius: 19px;
-    padding: 30px;
-    position: absolute;
-    top: 35px;
-    left: 45px;
+  background-color: var(--vermelha);
+  border-radius: 19px;
+  padding: 30px;
+  position: absolute;
+  top: 35px;
+  left: 45px;
+  display: flex;
+  flex-wrap: initial;
+  flex-direction: initial;
+  transition: all 1.2s;
 }
+
+#mudançaIdioma:hover {
+transform: scale(1.2);
+background-color: var(--laranja);
+}
+
 
 body {
   align-items: center;
@@ -56,6 +67,11 @@ h1 {
     width: 250px;
 }
 
+.tecla:hover {
+  box-shadow: 7px 6px 0 var(--vermelha);
+}
+
+
 .tecla.ativa,
 .tecla:active {
   background-color: var(--vermelha);
@@ -74,4 +90,13 @@ h1 {
 .tecla.active:focus,
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+}
+
+#copyright {
+  color: #000;
+    font-size: 11px;
+    position: relative;
+    text-decoration: underline;
+    top: 120px;
+    right: 770px;
 }
